@@ -25,14 +25,10 @@ The Histogram of gray scale image and color image is shown.
 
 
 ## Program:
-```python
-# Developed By: ANBU VINOTHA.S
-# Register Number: 212223230015
+### Developed By: MUGIL MURUGAN
+### Register Number: 212223230127
 
-```
-## Output:
-
-### Input Grayscale Image and Color Image
+### (i) Input Grayscale Image and Color Image
 ```python
 import cv2
 import matplotlib.pyplot as plt
@@ -42,8 +38,9 @@ cv2.imshow("Gray Image",gray_image)
 cv2.imshow("Colour Image",color_image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
- Histogram of Grayscale Image and any channel of Color Image
-python
+```
+### (ii) Histogram of Grayscale Image and any channel of Color Image
+```python
 import numpy as np
 import cv2
 Gray_image = cv2.imread("vijay.png")
@@ -59,11 +56,11 @@ plt.xlabel("Grayscale Value")
 plt.ylabel("Pixel Count")
 plt.stem(gray_hist)
 plt.show()
-Grayscale Image
+```
 
 
-Colour Image
-python
+### (iii) Colour Image
+```python
 plt.imshow(Color_image)
 plt.show()
 plt.title("Histogram of Color Image - Green Channel")
@@ -72,9 +69,9 @@ plt.ylabel("Pixel Count")
 plt.stem(color_hist)
 plt.show()
 cv2.waitKey(0)
-
-Histogram Equalization of Grayscale Image.
-python
+```
+### (iv) Histogram Equalization of Grayscale Image.
+```python
 import cv2
 gray_image = cv2.imread("vijay.png",0)
 cv2.imshow('Gray Scale Image',gray_image)
@@ -83,6 +80,7 @@ cv2.imshow("Equalized Image",equ)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
+## Output:
 
 
 ## Result: 
